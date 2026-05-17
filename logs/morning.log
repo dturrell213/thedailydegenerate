@@ -1,0 +1,110 @@
+
+======================================================================
+  SPORTS BETTING VALUE ENGINE v6
+  Sport: BASEBALL_MLB | Filter: today | Threshold: >15.0%
+======================================================================
+
+  Fetching MLB standings...
+  Found 30 teams
+  Fetching FanGraphs batter data...
+  Loaded 172 FanGraphs batter records
+  Fetching FanGraphs pitcher data...
+  Loaded 74 FanGraphs pitcher records
+  Fetching probable pitchers...
+  Found pitchers for 30 teams
+  Fetching odds...
+
+  Odds API quota: used 143 | remaining 357
+
+  Found 15 game(s)
+
+  Fetching team staff stats and full roster with splits...
+    Tampa Bay Rays: 13 hitters | OPS 0.715 | wRC+ 105
+    Miami Marlins: 13 hitters | OPS 0.709 | wRC+ 114
+    Atlanta Braves: 9 hitters | OPS 0.797 | wRC+ 121
+    Boston Red Sox: 11 hitters | OPS 0.679 | wRC+ 97
+    Washington Nationals: 13 hitters | OPS 0.739 | wRC+ 108
+    Baltimore Orioles: 12 hitters | OPS 0.694 | wRC+ 102
+    Pittsburgh Pirates: 11 hitters | OPS 0.738 | wRC+ 115
+    Philadelphia Phillies: 12 hitters | OPS 0.709 | wRC+ 107
+    Cleveland Guardians: 12 hitters | OPS 0.707 | wRC+ 105
+    Cincinnati Reds: 12 hitters | OPS 0.719 | wRC+ 103
+    Detroit Tigers: 11 hitters | OPS 0.708 | wRC+ 116
+    Toronto Blue Jays: 13 hitters | OPS 0.684 | wRC+ 101
+    New York Mets: 10 hitters | OPS 0.639 | wRC+ 86
+    New York Yankees: 10 hitters | OPS 0.785 | wRC+ 124
+    Chicago White Sox: 13 hitters | OPS 0.748 | wRC+ 117
+    Chicago Cubs: 12 hitters | OPS 0.752 | wRC+ 105
+    Houston Astros: 10 hitters | OPS 0.775 | wRC+ 119
+    Texas Rangers: 12 hitters | OPS 0.680 | wRC+ 100
+    Minnesota Twins: 13 hitters | OPS 0.719 | wRC+ 98
+    Milwaukee Brewers: 13 hitters | OPS 0.696 | wRC+ 104
+    St. Louis Cardinals: 12 hitters | OPS 0.723 | wRC+ 116
+    Kansas City Royals: 12 hitters | OPS 0.706 | wRC+ 98
+    Colorado Rockies: 12 hitters | OPS 0.714 | wRC+ 102
+    Arizona Diamondbacks: 13 hitters | OPS 0.706 | wRC+ 111
+    Athletics: 11 hitters | OPS 0.776 | wRC+ 112
+    San Francisco Giants: 11 hitters | OPS 0.684 | wRC+ 99
+    Los Angeles Angels: 12 hitters | OPS 0.707 | wRC+ 107
+    Los Angeles Dodgers: 13 hitters | OPS 0.788 | wRC+ 120
+    Seattle Mariners: 12 hitters | OPS 0.722 | wRC+ 111
+    San Diego Padres: 11 hitters | OPS 0.664 | wRC+ 91
+
+  Fetching weather...
+    Tropicana Field: 88.5F, 7.1 mph, rain 6%
+    Truist Park: 86.4F, 9.8 mph, rain 3%
+    Nationals Park: 88.0F, 8.7 mph, rain 4%
+    PNC Park: 83.7F, 9.5 mph, rain 8%
+    Progressive Field: 81.0F, 7.5 mph, rain 0%
+    Comerica Park: 83.3F, 6.3 mph, rain 1%
+    Citi Field: 88.3F, 7.8 mph, rain 0%
+    Rate Field: 83.7F, 15.5 mph, rain 5%
+    Daikin Park: 85.5F, 15.7 mph, rain 3%
+    Target Field: 71.1F, 15.7 mph, rain 16%
+    Busch Stadium: 85.3F, 17.6 mph, rain 1%
+    Coors Field: 61.9F, 12.8 mph, rain 29%
+    Sutter Health Park: 73.8F, 20.6 mph, rain 0%
+    Angel Stadium: 70.5F, 9.9 mph, rain 0%
+    T-Mobile Park: 61.0F, 7.0 mph, rain 0%
+
+  Running value model...
+
+====================================================================================================
+  2 VALUE BET(S) FOUND — ranked by model edge
+====================================================================================================
+
+Traceback (most recent call last):
+  File "C:\Users\dturr\OneDrive\Desktop\Sports betting algo\main.py", line 1417, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\dturr\OneDrive\Desktop\Sports betting algo\main.py", line 1412, in main
+    run_scanner(args.sport, day_filter, args.threshold, args.export)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dturr\OneDrive\Desktop\Sports betting algo\main.py", line 1372, in run_scanner
+    print(tabulate([r for _,r in value_rows], headers=headers, tablefmt="rounded_outline"))
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dturr\AppData\Local\Programs\Python\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 0-226: character maps to <undefined>
+
+=======================================================
+  THE DAILY DEGENERATE — MORNING RUN
+  Sunday, May 17 2026 — 09:27 AM
+=======================================================
+
+  Step 1/3 — Running value model...
+Traceback (most recent call last):
+  File "C:\Users\dturr\OneDrive\Desktop\Sports betting algo\daily.py", line 124, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\dturr\OneDrive\Desktop\Sports betting algo\daily.py", line 121, in main
+    morning_run()
+    ~~~~~~~~~~~^^
+  File "C:\Users\dturr\OneDrive\Desktop\Sports betting algo\daily.py", line 44, in morning_run
+    print("\n  \u2717 Model failed. Check main.py for errors.")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dturr\AppData\Local\Programs\Python\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2717' in position 4: character maps to <undefined>
