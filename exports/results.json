@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-16T00:50:26.837357",
+  "generated_at": "2026-05-17T09:27:57.161927",
   "summary": {
     "total_picks": 3,
     "wins": 0,
@@ -10,6 +10,52 @@
     "roi_pct": 0,
     "record": "0-0"
   },
-  "results": [],
+  "results": [
+    {
+      "date": "2026-05-16",
+      "game": "Kansas City Royals vs St. Louis Cardinals",
+      "team": "St. Louis Cardinals",
+      "best_odds": "-112",
+      "best_odds_american": -112,
+      "edge_pp": 28.17,
+      "model_prob": 81.0,
+      "result": "P",
+      "home_score": null,
+      "away_score": null,
+      "actual_winner": null,
+      "units_profit": null,
+      "pitcher_matchup": "Noah Cameron vs Kyle Leahy"
+    },
+    {
+      "date": "2026-05-16",
+      "game": "Boston Red Sox vs Atlanta Braves",
+      "team": "Atlanta Braves",
+      "best_odds": "-138",
+      "best_odds_american": -138,
+      "edge_pp": 16.18,
+      "model_prob": 74.16,
+      "result": "P",
+      "home_score": null,
+      "away_score": null,
+      "actual_winner": null,
+      "units_profit": null,
+      "pitcher_matchup": "Payton Tolle vs Bryce Elder"
+    },
+    {
+      "date": "2026-05-16",
+      "game": "Miami Marlins vs Tampa Bay Rays",
+      "team": "Tampa Bay Rays",
+      "best_odds": "-130",
+      "best_odds_american": -130,
+      "edge_pp": 15.49,
+      "model_prob": 72.01,
+      "result": "P",
+      "home_score": null,
+      "away_score": null,
+      "actual_winner": null,
+      "units_profit": null,
+      "pitcher_matchup": "Sandy Alcantara vs Nick Martinez"
+    }
+  ],
   "history": []
 }
